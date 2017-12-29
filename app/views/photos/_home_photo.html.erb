@@ -1,3 +1,4 @@
 <% @home_photo.each do |dis| %>
+    <%= dis.title %>
     <%= link_to (image_tag dis.main_image), photo_path(dis) %>
 <% end %> 

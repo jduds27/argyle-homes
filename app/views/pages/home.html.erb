@@ -2,4 +2,4 @@
 <%= render 'shared/nav' %> 
 
 <%= link_to "Login", new_user_session_path %>
-<%= link_to 'logout', destroy_user_session_path%>
+<%= link_to 'logout', destroy_user_session_path, method: :delete %>

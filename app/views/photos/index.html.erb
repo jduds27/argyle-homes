@@ -2,7 +2,7 @@
 
 <%= render 'shared/nav' %> 
 
-<%= link_to 'Add a Photo', new_photo_path %>
+<%= link_to 'Add a Photo', new_photo_path if logged_in?(:admin)%>
 
 <%= render 'home_photo', collection: @home_photos %> 
 
