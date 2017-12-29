@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+
 
 Things you may want to cover:
 
-* Ruby version
+* X Pages setup
 
-* System dependencies
+* X Carrier Wave Implementation
 
-* Configuration
+* X Database initialization
 
-* Database creation
+* Navigation
 
-* Database initialization
+* Pagelayouts
 
-* How to run the test suite
+* Bootstrap
 
-* Services (job queues, cache servers, search engines, etc.)
+* Graphics
 
-* Deployment instructions
+* Devise
 
 * ...

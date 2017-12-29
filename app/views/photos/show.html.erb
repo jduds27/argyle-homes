@@ -1,1 +1,6 @@
-<%= image_tag photo_img(@home_photo.main_image, 'main'), width: '100%' %>
+<%= image_tag photo_img(@home_photo.main_image, 'main'), width: '80%' %>
+
+<%= link_to 'Back to Gallery', photos_path %>
+<%= link_to 'Edit', edit_photo_path %>
+<%= link_to 'Next', @home_photo.next %>
+<%= link_to 'Previous', @home_photo.previous %>

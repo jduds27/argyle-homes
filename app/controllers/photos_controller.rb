@@ -33,6 +33,10 @@ class PhotosController < ApplicationController
   end
 
   def destroy
+    @home_photo.destroy
+    respond_to do |format|
+      format.html { redirect_to photos_path , notice: 'Photo Removed.' }
+    end
   end
 
   private

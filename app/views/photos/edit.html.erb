@@ -1,0 +1,4 @@
+<h1>Change or delete photo</h1>
+<%= render 'form'%>
+<%= link_to 'Delete photo', @home_photo, method: :delete, data: {confirm: 'Are you sure you want to obliterate this photo?'} %>
+<%= link_to 'Back to Gallery', photos_path %>
