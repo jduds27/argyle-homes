@@ -10,7 +10,7 @@ Things you may want to cover:
 
 * X Database initialization
 
-* Navigation
+* X Navigation
 
 * Pagelayouts
 
