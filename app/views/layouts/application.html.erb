@@ -8,10 +8,15 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+
+    <link href="path/to/lightbox.scss" rel="stylesheet">
   </head>
 
   <body>
     
     <%= yield %>
+
+
+    <script src="path/to/lightbox.js"></script>
   </body>
 </html>

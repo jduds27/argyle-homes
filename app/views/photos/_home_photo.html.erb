@@ -1,18 +1,11 @@
-<% @home_photo.each do |dis| %>
-    <%= link_to image_tag dis.main_image %>
-<% end %> 
-
-
-<a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox">
-                <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
-            </a>
-            
-
-
-
-<script>
-$(document).on('click', '[data-toggle="lightbox"]', function(event) {
-                event.preventDefault();
-                $(this).ekkoLightbox();
-            });
-            </script>
+<% @home_photo.each do |image| %>
+    <% if logged_in?(:admin) %>
+    <%= link_to (image_tag image.main_image), photo_path(image) %>
+    <% else %>
+  <div class="col-md-3 portrait">
+    <a href='<%= image.main_image %>' data-lightbox="my-images">
+      <%= image_tag image.main_image, class: "img-responsive" %>
+    </a>
+  </div>
+  <% end %>
+<% end %>
