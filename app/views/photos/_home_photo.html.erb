@@ -1,4 +1,18 @@
 <% @home_photo.each do |dis| %>
-    <%= dis.title %>
-    <%= link_to (image_tag dis.main_image), photo_path(dis) %>
+    <%= link_to image_tag dis.main_image %>
 <% end %> 
+
+
+<a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox">
+                <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
+            </a>
+            
+
+
+
+<script>
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+            </script>
