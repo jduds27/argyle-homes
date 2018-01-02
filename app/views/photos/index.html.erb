@@ -1,13 +1,7 @@
-
-<%= render 'shared/nav' %> 
-
-<h1>Photo Gallery</h1>
-
-<%= link_to 'Add a Photo', new_photo_path if logged_in?(:admin)%>
-
-<%= render 'home_photo', collection: @home_photos %> 
-
-
-
-
-
+<div class="container">
+  <%= render 'shared/nav' %> 
+    <div class="gallery-header">
+      <h1>Photo Gallery</h1>
+    </div>
+  <%= render 'page_selector' %>
+</div>

@@ -1,11 +1,9 @@
 <% @home_photo.each do |image| %>
-    <% if logged_in?(:admin) %>
-    <%= link_to (image_tag image.main_image), photo_path(image) %>
-    <% else %>
-  <div class="col-md-3 portrait">
-    <a href='<%= image.main_image %>' data-lightbox="my-images">
+  <div class="row">
+    <div class="col">
+      <a href='<%= image.main_image %>' data-lightbox="my-images">
       <%= image_tag image.main_image, class: "img-responsive" %>
-    </a>
+      </a>
+   </div>
   </div>
-  <% end %>
 <% end %>
