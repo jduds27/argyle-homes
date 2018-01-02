@@ -12,6 +12,8 @@ Things you may want to cover:
 
 * X Navigation
 
+* navbar
+
 * Pagelayouts
 
 * Bootstrap

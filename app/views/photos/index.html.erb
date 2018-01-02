@@ -1,6 +1,7 @@
-<h1>Photo Gallery</h1>
 
 <%= render 'shared/nav' %> 
+
+<h1>Photo Gallery</h1>
 
 <%= link_to 'Add a Photo', new_photo_path if logged_in?(:admin)%>
 
