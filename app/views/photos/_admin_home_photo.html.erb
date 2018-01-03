@@ -1,10 +1,12 @@
 <div class='row'>
   <%= link_to 'Add a Photo', new_photo_path if logged_in?(:admin)%>
 </div>
-<% @home_photo.each do |image| %>
-  <div class="row">
+<div class="section">
     <div class="col">
+<% @home_photo.each do |image| %>
+  
       <%= link_to (image_tag image.main_image, class: "img-responsive"), photo_path(image) %>
-    </div>
-  </div>
+    
 <% end %>
+</div>
+  </div>

@@ -1,3 +1,35 @@
-// Place all the styles related to the Photos controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.gallery-header {
+  height: 300px;
+  background: white;
+  color: black;
+  text-align: center;
+  padding-left: 25px;
+  
+  }
+
+.gallery-hr {
+  padding-top: 20px;
+}
+
+.section {
+  max-width: 1600px;
+  margin: 0 auto;
+  display: flex;    
+}
+.col {
+  margin: 5px;
+  flex-grow: 2;
+  flex-shrink:  1;
+}
+
+.img-responsive {
+  flex-direction: column;
+  padding-bottom: 10px;
+  border: 2px;
+  width: 320px;
+  height: 225px;
+ }
+
+
+
+

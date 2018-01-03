@@ -1,9 +1,15 @@
-<% @home_photo.each do |image| %>
-  <div class="row">
+<div class="container">
+  <div class="section">
     <div class="col">
-      <a href='<%= image.main_image %>' data-lightbox="my-images">
-      <%= image_tag image.main_image, class: "img-responsive" %>
-      </a>
-   </div>
+     
+        <% @home_photo.each do |image| %>
+      
+        <a href='<%= image.main_image %>' data-lightbox="my-images">
+        <%= image_tag image.main_image, class: "img-responsive" %>
+        </a>
+        
+        <% end %>
+     
+    </div>
   </div>
-<% end %>
+</div>
